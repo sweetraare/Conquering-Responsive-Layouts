@@ -16,3 +16,7 @@ Quick understanding of how em and rem works
 
 Use max width to avoid our divs to grow when the screen size is bigger.
 Also complete challenge 2
+
+## Day 4
+
+Use os units vw, vh, vmin and vmax in texts and maybe in heights.
