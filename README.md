@@ -40,3 +40,8 @@ Introduction to flex box.
 Use of `display: flex` and `flex-direction`
 
 Challenge number 4 add columns using flex-box
+
+## Day 9
+
+Column widths, hero image.
+Second flex box challenge.
