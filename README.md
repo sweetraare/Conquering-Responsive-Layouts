@@ -45,3 +45,12 @@ Challenge number 4 add columns using flex-box
 
 Column widths, hero image.
 Second flex box challenge.
+
+## Day 10
+
+It's better to use tags like `<main></main>` or `<aside></aside>` for accesibility reasons.
+But if i'm not sure of what tag to use, I could rely on `<div></div>`
+
+## Day 11
+
+Challenge 06: Create a nav with flex box
