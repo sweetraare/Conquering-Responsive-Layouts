@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/***********************
+ *                     *
+ *  UTILITIES CLASS    * 
+ *                     *
+ **********************/
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/***********************
+ *                     *
+ *     HERO CLASS      * 
+ *                     *
+ **********************/
+
+.hero {
+  background: #f3eed9;
+  padding: 8em 0;
+  text-align: center;
+}
+
+.hero__title {
+  color: #824936;
+  font-size: 3.75rem;
+  font-family: "Playfair Display", serif;
+}
+
+.hero__subtitle {
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/***********************
+ *                     *
+ *     MAIN CLASS      * 
+ *                     *
+ **********************/
+
+.main {
+  padding: 3em 0;
+}
+
+.main__title {
+  color: #824936;
+  font-family: "Playfair Display", serif;
+  font-size: 2.25rem;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.main__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 1.3125rem;
+  width: 48%;
+}
+
+/***********************
+ *                     *
+ *  SECONDARY CLASS    * 
+ *                     *
+ **********************/
+
+.secondary {
+  background: #222c2a;
+  padding: 5em;
+}
+
+.secondary__info,
+.secondary__img {
+  width: 48%;
+}
+
+.secondary__img {
+  align-self: center;
+}
+
+.secondary__title {
+  color: #f3eed9;
+  font-family: "Playfair Display", serif;
+  font-size: 2.25rem;
+}
+
+.secondary__text {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 1.3125rem;
+}
+
+/***********************
+ *                     *
+ *     THRID CLASS     * 
+ *                     *
+ **********************/
+
+.thrid {
+  background: #824936;
+  padding: 5em;
+}
+
+.thrid__info,
+.thrid__img {
+  width: 48%;
+}
+
+.secondary__img {
+  align-self: center;
+}
+
+.thrid__title {
+  color: #f3eed9;
+  font-family: "Playfair Display", serif;
+  font-size: 2.25rem;
+}
+
+.thrid__text {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 1.3125rem;
+}

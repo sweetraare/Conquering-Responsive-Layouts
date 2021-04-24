@@ -54,3 +54,7 @@ But if i'm not sure of what tag to use, I could rely on `<div></div>`
 ## Day 11
 
 Challenge 06: Create a nav with flex box
+
+## Day 12
+
+Challenge 07: Create a complete design from scratch
