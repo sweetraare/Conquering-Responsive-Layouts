@@ -58,3 +58,49 @@ Challenge 06: Create a nav with flex box
 ## Day 12
 
 Challenge 07: Create a complete design from scratch
+
+## Day 13 / 14
+
+Use of `min()`, `max()` and `clamp()`.
+Example: `width: min(80%, 720px)` is the same as: `width: 80%; max-width: 720px`
+
+## Day 15
+
+Introduction to media querys.
+
+Mobile first approach
+
+```css
+@media (min-width: 600px) {
+  .container {
+    background: red;
+  }
+}
+```
+
+Desktop first approach
+
+```css
+@media (max-width: 600px) {
+  .container {
+    background: red;
+  }
+}
+```
+
+## Day 16
+
+How to find the breakpoints.
+It could depend on the design. Or we can use some hard coded values such as listed here:
+[Breakpoints](https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/)
+
+## Day 17
+
+Must add this meta tag in order to media querys work.
+
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+## Day 18
+
+Create a mobile first design.
+Use of `media querys` usign `min-width`
