@@ -1,0 +1,326 @@
+/* COMMON STYLES */
+:root {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header,
+section {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Montserrat", serif;
+  font-weight: normal;
+}
+
+/* HEADER AND NAVIGATION */
+
+header {
+  background: #2e323f;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.nav {
+  font-family: "Oswald", sans-serif;
+  /* width: 100vw; */
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #a59678;
+  color: white;
+  transition: opacity 250ms ease;
+
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+.nav__item {
+  margin-bottom: 1.5em;
+}
+
+.nav__link {
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.nav__link--button {
+  padding: 0.5em 1em;
+  border-radius: 1000em;
+  background: #a59678;
+  color: #fff;
+}
+
+.logo {
+  height: 30px;
+  align-self: center;
+}
+
+/* GLOBAL USE */
+
+.accent {
+  color: #a59678;
+}
+
+.white {
+  color: #fff;
+}
+
+.container {
+  width: min(80%, 1200px);
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.hero {
+  background-color: #3b4050;
+  color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.hero__title {
+  font-size: clamp(3rem, 5vw, 5.625rem);
+}
+
+.hero__info {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero__button {
+  font-size: 1.5rem;
+  background: #a59678;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 1000em;
+  border: none;
+  flex-grow: 0;
+}
+
+/* SECOND */
+.second {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #e6e8ef;
+}
+
+/* THRID */
+.third {
+  padding: 2rem 0;
+}
+
+.small-info {
+  background-color: #3b4050;
+  text-align: center;
+  padding: 1em;
+}
+
+.small-info + .small-info {
+  margin-top: 1em;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #3b4050;
+  color: #e6e8ef;
+  padding: 2rem 0;
+}
+
+.footer__title {
+  text-align: center;
+}
+
+.about {
+  flex: 2;
+  margin-right: 3rem;
+}
+
+.getting,
+.other,
+.more {
+  flex: 1;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer__list > li {
+  margin-bottom: 1.2rem;
+}
+
+/* RESPONSIVENESS */
+
+@media (min-width: 700px) {
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col + .col {
+    margin-left: 3rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav {
+    visibility: visible;
+    display: flex;
+    height: auto;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: 1em;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__item {
+    margin-bottom: 0;
+  }
+
+  .nav__item + .nav__item {
+    margin-left: 1.1em;
+  }
+
+  .nav__list--secondary {
+    margin-top: auto;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .third-container {
+    flex-direction: column;
+  }
+
+  .third .col + .col {
+    margin-left: 0;
+  }
+
+  .small-info-container {
+    flex-direction: row;
+  }
+
+  .small-info + .small-info {
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .third-container {
+    flex-direction: row;
+  }
+
+  .third .col + .col {
+    margin-left: 1rem;
+  }
+
+  .small-info-container {
+    flex-direction: column;
+  }
+
+  .small-info + .small-info {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
