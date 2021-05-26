@@ -109,4 +109,15 @@ Use of `media querys` usign `min-width`
 
 Mobile navigation challenge.
 Change a top navigation to a hamburger menu when is a mobile device.
-This can be found on challenge 09
+his can be found on challenge 09
+
+## Day 20
+
+Just Kevin's solution for Day 19 challenge
+
+## Day 21
+
+Final Challenge.
+With breakpoints at `700px` and `1000px`
+
+This can be found on the following link [All Challenges](https://sweetraare.github.io/Conquering-Responsive-Layouts/)
